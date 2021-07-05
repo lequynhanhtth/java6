@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Test</h3>
+<ul>
+    <li th:each="sv,state : ${dssv}">
+        <a th:href="@{|/student/list?index=${state.index}|}">[[${sv.name}]]</a>
+    </li>
+</ul>
+<h3>Detail</h3>
+<ul th:object="${sv}">
+    <li><i>Name</i> <b th:text="*{name}"></b></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var sv = {
+        "name": "Nguyễn Văn Tèo ", "Gender": true, "Marks": 7.5, "Contact": {
+            "Email": "Teonv@Gmail.com", "phone": "0988329121"
+        }
+    }
+    console.log(sv)
+    sv.name = sv['name'].toUpperCase();
+    console.log(sv.name, sv.Contact.Email)
+    for (var key in sv) {
+        console.log(key, sv[key])
+    }
+    var text = JSON.stringify(sv)
+    console.log(text)
+</script>
+</body>
+</html>

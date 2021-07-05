@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Bibi",
+    "gender": true,
+    "marks": 6.4,
+    "contact": {
+      "email": "Nhan@Gmail.com",
+      "phone": "09230290",
+      "address": null
+    },
+    "subjects": [
+      "WWEB",
+      "COM"
+    ]
+  },
+  {
+    "name": "Quy",
+    "gender": true,
+    "marks": 6.4,
+    "contact": {
+      "email": "Nhan@Gmail.com",
+      "phone": "09230290",
+      "address": null
+    },
+    "subjects": [
+      "WWEB",
+      "COM"
+    ]
+  }
+]
