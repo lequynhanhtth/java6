@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class Jackson2 {
     public static void main(String[] args) throws Exception {
-        demo3();
+        demo4();
     }
 
     private static void demo2() throws Exception {
