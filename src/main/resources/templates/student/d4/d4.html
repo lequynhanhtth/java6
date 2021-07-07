@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="app" ng-controller="crtl">
+<div>
+    <input ng-model="form.contact.email" placeholder="Email"></br>
+    <input ng-model="form.name" placeholder="Fullname"></br>
+    <input ng-model="form.marks" placeholder="Average Marks?"></br>
+    <input ng-model="form.gender" ng-value="true" type="radio"> Male</br>
+    <input ng-model="form.gender"ng-value="false" type="radio"> Female</br>
+    <select ng-model="form.country">
+        <option value="VN">Viet Nam</option>
+        <option value="US">United States</option>
+    </select>
+    <button ng-click="create()">Create</button>
+    <button ng-click="update()">Update</button>
+    <button ng-click="delete(key)">Delete</button>
+    <button ng-click="reset()">Reset</button>
+</div>
+<table style="with:100%">
+    <tr>
+        <th>Email</th>
+        <th>Fullname</th>
+        <th>Marks</th>
+        <th>Gender</th>
+        <th>Country</th>
+    </tr>
+    <tr ng-repeat="(key, stu) in items">
+        <td>{{stu.contact.email}}</td>
+        <td>{{stu.name}}</td>
+        <td>{{stu.marks}}</td>
+        <td>{{stu.gender?'male':'female'}}</td>
+        <td>{{stu.country}}</td>
+        <td>
+            <button ng-click="edit(key)">Edit</button>
+            <button ng-click="delete(key)">Del</button>
+        </td>
+    </tr>
+</table>
+<script src="demo-ctrl.js"></script>
+</body>
+</html>
